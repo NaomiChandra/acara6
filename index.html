@@ -290,7 +290,7 @@
                         $("#featureModal").modal("show");
                     },
                     mouseover: function (e) {
-                        Jumlah_penduduk.bindTooltip(feature.properties.DESA_KELUR, {
+                        Jumalah_penduduk.bindTooltip(feature.properties.DESA_KELUR, {
                             direction: "auto",
                             sticky: true,
                         });
@@ -299,7 +299,7 @@
             },
 
         });
-        $.getJSON("data/Jumlah_penduduk.geojson", function (data) {
+        $.getJSON("data/jumlah_penduduk.geojson", function (data) {
             Jumalah_penduduk.addData(data); // Menambahkan data ke dalam GeoJSON Polygon Jumlah Penduduk
             map.addLayer(Jumalah_penduduk); // Menambahkan GeoJSON Polygon Jumlah Penduduk ke dalam peta
         });
